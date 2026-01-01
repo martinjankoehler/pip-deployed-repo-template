@@ -110,7 +110,7 @@ jobs:
       shell: bash    # NOTE: required for windows poetry calls
 
     - name: "[🐍] Store dist artifact"
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v6
       with:
         name: python-dist_py${{ matrix.python-version }}
         path: dist
